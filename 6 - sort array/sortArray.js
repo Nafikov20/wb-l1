@@ -2,8 +2,9 @@ function sortedArray(arr) {
     // Сортировка массива
     return arr.sort((a, b) => {
         // Условие, если нет одинаковых возрастов, сортировка идет только по дате
+        if (a.age !== b.age) return a.age - b.age
         //  Если есть совпадения по дате, сортировка продалжается по имени в алфавитном порядке
-       return  a.age !== b.age ? a.age - b.age : a.name > b.name ? 1 : -1
+        return a.name > b.name ? 1 : -1
     });
 }
 
@@ -13,11 +14,11 @@ const arrayOfObjects = [
     { name: 'Alice', age: 30 },
     { name: 'Bob', age: 22 },
     { name: 'Eva', age: 28 },
-    { name: 'Michael', age: 33 },
     { name: 'Oleg', age: 33 },
     { name: 'Charlie', age: 33 },
     { name: 'Grace', age: 26 },
     { name: 'David', age: 31 },
+    { name: 'Michael', age: 33 },
     { name: 'Sophie', age: 29 },
     { name: 'Olivia', age: 27 }
 ];
