@@ -1,0 +1,72 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+header {
+    padding: 30px;
+}
+main,
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.widget__container {
+    box-shadow: rgba(17, 17, 26, 0.1) 0 8px 24px,
+                rgba(17, 17, 26, 0.1) 0 16px 56px,
+                rgba(17, 17, 26, 0.1) 0 24px 80px;
+    width: 400px;
+    height: 450px;
+    border-radius: 8px;
+    padding: 16px;
+    overflow: auto;
+}
+
+.post {
+    max-width: 100%;
+    box-sizing: border-box;
+    padding-bottom: 40px;
+    border-bottom: 2px solid rgba(18, 18, 225, 0.74);
+}
+
+.post img {
+    max-width: 100%;
+    height: auto;
+}
