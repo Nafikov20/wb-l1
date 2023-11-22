@@ -1,0 +1,75 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+header {
+    padding: 30px;
+    border-bottom: 1px solid #a6c2f6;
+}
+main,
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main {
+    flex-direction: column;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+}
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+th {
+    cursor: pointer;
+}
+.pagination {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+.page-item {
+    margin: 0 5px;
+    cursor: pointer;
+}
